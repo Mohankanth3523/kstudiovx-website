@@ -231,7 +231,7 @@ href="style.css">
 
         </div>
 
-        <a href="https://wa.me/8110020794"
+        <a href="https://wa.me/918110020794"
         target="_blank"
         class="btn-gold">
 
@@ -243,11 +243,11 @@ href="style.css">
 
     <!-- RIGHT -->
 
-   <div class="contact-form-box">
+ <div class="contact-form-box">
 
     <h2>Send Inquiry</h2>
 
-    <form action="https://formsubmit.co/iammohankanth@gmail.com" method="POST">
+    <form action="https://formsubmit.co/kstudiovx@gmail.com" method="POST">
 
         <!-- Name -->
         <input
@@ -280,9 +280,10 @@ href="style.css">
             <option value="">Select Service</option>
 
             <option>Wedding Photography</option>
-            <option>Engagement Shoot</option>
+            <option>Pre Wedding Shoot</option>
+            <option>Engagement Photography</option>
             <option>Couple Shoot</option>
-            <option>Maternity Shoot</option>
+            <option>Maternity Photography</option>
             <option>Baby Shoot</option>
             <option>Event Coverage</option>
 
@@ -296,20 +297,34 @@ href="style.css">
             minlength="10"
             required></textarea>
 
-       <!-- FormSubmit Settings -->
-    <input type="hidden" name="_subject" value="New K Studio Booking Inquiry">
+        <!-- FormSubmit Settings -->
 
-    <input type="hidden" name="_template" value="table">
+        <input type="hidden"
+               name="_subject"
+               value="New K Studio VX Booking Inquiry">
 
-    <input type="hidden" name="_captcha" value="false">
+        <input type="hidden"
+               name="_template"
+               value="table">
 
-   <input type="hidden" name="_next" value="https://kstudiovx.netlify.app/thankyou.html">
-    
+        <input type="hidden"
+               name="_captcha"
+               value="false">
+
+        <input type="hidden"
+               name="_next"
+               value="https://kstudiovx.com/thankyou.html">
+
+        <input type="hidden"
+               name="_autoresponse"
+               value="Thank you for contacting K Studio VX. We have received your inquiry and will contact you shortly.">
 
         <!-- Submit Button -->
+
         <button
             type="submit"
-            class="btn-gold">
+            class="btn-gold"
+            onclick="gtag('event','contact_form_submit');">
 
             Send Inquiry
 
