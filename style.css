@@ -1576,8 +1576,7 @@ background:var(--gold);
 footer{
 
     background:#0a0a0a;
-
-    padding:50px 0 20px;
+     padding:10px 0 15px;
 
     text-align:center;
 
@@ -1594,7 +1593,7 @@ footer h2{
 
     letter-spacing:4px;
 
-    margin: bottom 10px;
+        margin-bottom:10px;
 }
 
 footer p{
@@ -1614,7 +1613,7 @@ margin-bottom:20px;
 
     gap:15px;
 
-    margin:20px 0;
+    margin:15px 0;
 }
 
 .social-icons a{
@@ -1657,8 +1656,6 @@ margin-bottom:20px;
 
     padding-top:15px;
 
-    border-top:1px solid rgba(255,255,255,.08);
-
     color:#888;
 
     font-size:.95rem;
@@ -1669,23 +1666,7 @@ margin-bottom:20px;
     color:#888 !important;
 }
 
-/* MOBILE */
 
-@media(max-width:768px){
-
-    footer{
-
-        padding:40px 20px ;
-    }
-
-    footer h2{
-
-        font-size:2rem;
-    }
-    footer p{
-        font-size:0.95rem;
-        line-height:1.6;
-    }
 .footer-credit{
     margin-top:15px;
     font-size:0.9rem;
@@ -1716,24 +1697,8 @@ font-size:0.9rem;
         max-width:300px;
         margin:auto;
     }
-}
 
-/* ==========================================
-   COPYRIGHT
-========================================== */
 
-.copyright{
-
-    margin-top:25px;
-
-    padding-top:25px;
-
-    border-top:1px solid #eeeeee;
-
-    font-size:.95rem;
-
-    color:#777777;
-}
 
 /* ==========================================
    WHATSAPP BUTTON
@@ -1785,7 +1750,7 @@ font-size:0.9rem;
 
     footer{
 
-        padding:60px 20px 30px;
+        padding:15px 15px 20px;
     }
 
     footer h2{
@@ -1872,6 +1837,22 @@ font-size:0.9rem;
 ========================================== */
 
 @media(max-width:991px){
+
+    footer .container{
+        width:95%;
+        max-width:1400px;
+        margin:auto;
+    }
+    .footer-links{
+        gap:40px;
+    }
+
+    .footer-tagline,
+    .footer-services,
+    .footer-location{
+        max-width:1000px;
+        margin:15px auto;
+    }
 
     .gallery-grid{
 
@@ -2733,4 +2714,61 @@ footer .footer-credit a:active{
 
 footer .footer-credit a:hover{
     color:#ffffff !important;
+}
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px 25px;
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:var(--gold);
+}
+
+.footer-tagline,
+.footer-location{
+    margin:8px 0;
+    line-height:1.8;
+}
+
+.footer-credit a{
+    color:var(--gold);
+    text-decoration:none;
+}
+
+.footer-credit a:hover{
+    text-decoration:underline;
+}
+.footer-phone a,
+.footer-website a{
+    color:#d4af37;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.footer-phone a:hover,
+.footer-website a:hover{
+    color:#ffffff;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:rgba(212,175,55,.2);
+    width:90%;
+    margin:25px auto;
+}
+.footer-services{
+    line-height:1.8;
+    max-width:900px;
+    margin:15px auto;
 }
